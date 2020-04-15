@@ -1,0 +1,40 @@
+body{
+    background: linear-gradient(45deg, #185C94, #2B4A63, #042E50, #60A3DB, #90B9DB);
+}
+main{
+    max-width: 50%;
+    text-align: justify;
+    margin: auto;
+}
+
+.box{
+    max-width: 50%;
+    margin: auto;
+}
+
+.articl{
+    max-width: 50%;
+    margin: auto;
+}
+.menu li a{
+    color: rgb(0, 1, 2);
+}
+
+a{
+    color: rgb(0, 1, 2);
+}
+
+h1{
+    color: rgb(0, 1, 2);
+}
+
+h2{
+    color: rgb(0, 1, 2);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    color: rgb(0, 1, 2);
+    font-family: cursive;
+}
+
