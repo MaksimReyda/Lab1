@@ -1,0 +1,20 @@
+.selector {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+  margin-right: 30px;
+}
+
+.item-type-one, .item-type-two {
+  display: inline-block;
+  transition: all .5s ease;
+  max-width: 320px;
+}
+
+.item-type-one {
+  margin-top: 20px;
+}
+
+.item-type-two {
+  margin-top: 10px;
+}
