@@ -1,0 +1,28 @@
+@media print {
+
+    footer{
+        display: none !important;
+    }
+    
+    #menu{
+        display: none !important;
+    }
+ 
+    .container{
+        color: initial !important;
+        margin: 50px;
+        font-family: 'Times New Roman', Times, serif !important;
+    }
+ 
+    img{
+        display: none;
+    }
+ 
+     a[href]:after {
+         content: " (" attr(href) ")";
+     }
+     
+    .menuBurger {
+        display: none;   
+    }
+   }

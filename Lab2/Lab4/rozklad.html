@@ -3,138 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="css/node_modules/normalize.css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>Restailing страница расписания</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <link rel="stylesheet" media="print" href="css/print.css">
 </head>
 <body>
-    <div class="box">
-        <header>
-            <h1>Личная страница (блог) Рейда Максим Александрович</h1>
-        </header>
-        <nav>
-            <ul class="menu">
-                <li><a href="index.html"><img src="./images/9.png" alt=" Main page"></a></li><div class="border">|</div>
-                <li class="test"><a href="rozklad.html">Мое расписание</a></li><div class="border">|</div>
-                <li class="test"><a href="photo.html">Фотоальбом</a></li><div class="border">|</div>
-                <li class="test"><a href="news.html">Последние новости</a></li>
-                <li style="float:right"><a href="https://mail.google.com/mail/u/0/#inbox"><img src="./images/at.svg" alt="gmail.com" width="24px" height="24px"> </a></li>
-
-            </ul>    
-        </nav>
-       
-    </div>
-
-    <main class="rozklad">
-        <section>
-            <table border="1"> 
-                <tr>
-                    <th>Понедельник</th>
-                    <th>Вторник</th>
-                    <th>Среда</th>
-                    <th>Четрерг</th>
-                    <th>Пятница</th>
-                    <th>Суббота</th>
-                </tr>
-                <tr>
-                    <td>ДСР</td>
-                    <td>
-                        <div>&nbsp;</div>
-                        <hr>
-                        <div>14:30. Язык прогммирования Java. 37(1)</div>
-                    </td>
-                    <td>
-                        14:30. Основы автоматизированного проектирования сложных систем. 408(2)
-                    </td>
-                    <td>
-                        12:55. Технологии и протоколы Internet. 36(1)
-                    </td>
-                    <td>
-                        11:25.  Язык прогммирования Java. 55(1)
-                    </td>
-                    <td>
-                        8:00. Деловая и научная компьютерная графика 303(6)
-                    </td>
-                </tr>
-                <tr>
-                    <td>ДСР</td>
-                    <td>
-                        16:05. Язык прогммирования Java. 37(1)
-                    </td>
-                    <td>
-                        16:05. Практикум по программированию. 41(1)
-                    </td>
-                    <td>
-                        14:30. Численные методы в информатике. 36(1)
-                    </td>
-                    <td>
-                        Иностранный язык. 507(6)
-                    </td>
-                    <td>
-                        9:35. Деловая и научная компьютерная графика 301(2)
-                    </td>
-                </tr>
-                <tr>
-                    <td>ДСР</td>
-                    <td>
-                        17:40. Технологии и протоколы Internet. 40(1)
-                    </td>
-                    <td>
-                        17:40. Практикум по программированию. 41(1)
-                    </td>
-                    <td>
-                        <div>&nbsp;</div>
-                    </td>
-                    <td>
-                        14:30. Основы автоматизированного проектирования сложных систем. 40(1)
-                    </td>
-                    <td>
-                        <div>&nbsp;</div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>ДСР</td>
-                    <td><div>&nbsp;</div></td>
-                    <td><div>&nbsp;</div></td>
-                    <td><div>&nbsp;</div></td>
-                    <td>
-                        16:05. Численные методы в информатике. 40(1)
-                    </td>
-                    <td><div>&nbsp;</div></td>
-                </tr>
-            </table>
-        </section>
-        <br>
-        <section>
-            <h2>Преподаватели</h2>
-            <ul>
-                <li>
-                   <b>Язык прогммирования Java</b> - Горбенко В. И.
-                </li>
-                <li>
-                    <b>Технологии и протоколы Internet</b> - Лисняк А. А. / Лебедь М. В.
-                </li>
-                <li>
-                    <b>Основы автоматизированного проектирования сложных систем</b> - Кудин О. В. / Кривохата А. Г.
-                </li>
-                <li>
-                    <b> Практикум по программированию</b> - Стреляев Ю. М. 
-                </li>
-                <li>
-                    <b>Иностранный язык</b> - Веретегел В. Л.
-                </li>
-                <li>
-                    <b>Численные методы в информатике</b> - Левчук С. А.
-                </li>
-                <li>
-                    <b>Деловая и научная компьютерная графика</b> - Решевская Е. С.
-                </li>
+    <header>
+        <nav class="container">
+            <h1 class="logo">Личная страница (блог) Рейда Максим Александрович</h1>
+            <div class="menuBurger">
+                <svg width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                     <title>background</title>
+                     <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+                    </g>
+                    <g>
+                     <title>Layer 1</title>
+                     <path fill="#044cf1" id="svg_1" d="m4,10l24,0c1.104,0 2,-0.896 2,-2s-0.896,-2 -2,-2l-24,0c-1.104,0 -2,0.896 -2,2s0.896,2 2,2zm24,4l-24,0c-1.104,0 -2,0.896 -2,2s0.896,2 2,2l24,0c1.104,0 2,-0.896 2,-2s-0.896,-2 -2,-2zm0,8l-24,0c-1.104,0 -2,0.896 -2,2s0.896,2 2,2l24,0c1.104,0 2,-0.896 2,-2s-0.896,-2 -2,-2z"/>
+                    </g>
+                   </svg>
+            </div>
+            <ul id="menu">
+                <li><a href="index.html">Главная страница</a></li>
+                <li><a href="news.html">Новости</a></li>
+                <li><a href="photo.html">Фотоальбом</a></li>
+                <li><a href="rozklad.html">Мое росписание</a></li>
+                <li class="test"><a href="https://mail.google.com/mail/u/0/?tab=rm#inbox">Свяжитесь со мной</a></li>
             </ul>
-        </section>
-        <p style="float:right"><a href="javascript:scroll(0,0)">Наверх</a></p>
-    </main>
+        </nav>
+    </header>
+    <div class="container">
+        <h2 class="rozklad">Pасписания</h2>
+        <div class="post-list">
+            <article id="post-1" class="post">
+                <div class="scrol">
+                    <table border="1"> 
+                        <tr>
+                            <th>Понедельник</th>
+                            <th>Вторник</th>
+                            <th>Среда</th>
+                            <th>Четрерг</th>
+                            <th>Пятница</th>
+                            <th>Суббота</th>
+                        </tr>
+                        <tr>
+                            <td>ДСР</td>
+                            <td>
+                                <div>&nbsp;</div>
+                                <hr>
+                                <div>14:30. Язык прогммирования Java. 37(1)</div>
+                            </td>
+                            <td>
+                                14:30. Основы автоматизированного проектирования сложных систем. 408(2)
+                            </td>
+                            <td>
+                                12:55. Технологии и протоколы Internet. 36(1)
+                            </td>
+                            <td>
+                                11:25.  Язык прогммирования Java. 55(1)
+                            </td>
+                            <td>
+                                8:00. Деловая и научная компьютерная графика 303(6)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ДСР</td>
+                            <td>
+                                16:05. Язык прогммирования Java. 37(1)
+                            </td>
+                            <td>
+                                16:05. Практикум по программированию. 41(1)
+                            </td>
+                            <td>
+                                14:30. Численные методы в информатике. 36(1)
+                            </td>
+                            <td>
+                                Иностранный язык. 507(6)
+                            </td>
+                            <td>
+                                9:35. Деловая и научная компьютерная графика 301(2)
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ДСР</td>
+                            <td>
+                                17:40. Технологии и протоколы Internet. 40(1)
+                            </td>
+                            <td>
+                                17:40. Практикум по программированию. 41(1)
+                            </td>
+                            <td>
+                                <div>&nbsp;</div>
+                            </td>
+                            <td>
+                                14:30. Основы автоматизированного проектирования сложных систем. 40(1)
+                            </td>
+                            <td>
+                                <div>&nbsp;</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ДСР</td>
+                            <td><div>&nbsp;</div></td>
+                            <td><div>&nbsp;</div></td>
+                            <td><div>&nbsp;</div></td>
+                            <td>
+                                16:05. Численные методы в информатике. 40(1)
+                            </td>
+                            <td><div>&nbsp;</div></td>
+                        </tr>
+                    </table>
+                </div>
+            </article>
+            <article id="post-2" class="post">
+                <h2 class="post-title">Преподаватели</h2>
+                <div class="post-content">
+                    <ul class="teachers">
+                        <li>
+                           <b>Язык прогммирования Java</b> - Горбенко В. И.
+                        </li>
+                        <li>
+                            <b>Технологии и протоколы Internet</b> - Лисняк А. А. / Лебедь М. В.
+                        </li>
+                        <li>
+                            <b>Основы автоматизированного проектирования сложных систем</b> - Кудин О. В. / Кривохата А. Г.
+                        </li>
+                        <li>
+                            <b> Практикум по программированию</b> - Стреляев Ю. М. 
+                        </li>
+                        <li>
+                            <b>Иностранный язык</b> - Веретегел В. Л.
+                        </li>
+                        <li>
+                            <b>Численные методы в информатике</b> - Левчук С. А.
+                        </li>
+                        <li>
+                            <b>Деловая и научная компьютерная графика</b> - Решевская Е. С.
+                        </li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+    </div>
     <footer>
-        <p>Copyrite 2020. Все права защищены. <a href="https://www.instagram.com/maxik.reyda/">Напишите мне.</a></p>
+        <div class="container">
+            <p>Copyrite 2020. Все права защищены.  <a title="Instagram" href="https://www.instagram.com/maxik.reyda/" target="_blank"><i class="fa fa-instagram"></i></a></p>          
+        </div>
     </footer>
+    <script>
+        $(function(){
+            
+            $('.menuBurger').on('click', function(){
+                
+                $('#menu').slideToggle(300, function(){
+                    
+                    if($(this).css('display') === 'none'){
+                        $(this).removeAttr('style');
+                }
+                
+            });
+            
+         });
+            
+        });
+            </script>
 </body>
 </html>

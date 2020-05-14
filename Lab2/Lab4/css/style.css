@@ -1,54 +1,90 @@
-body{
-    background: linear-gradient(45deg, #185C94, #2B4A63, #042E50, #60A3DB, #90B9DB);
+
+@import url('/css/responsive.css');
+ul {
+    list-style: none;
 }
-main{
-    max-width: 50%;
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display';
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+body {
+    font-family: 'Open Sans', arial, sans-serif;
+    font-size: 14px;
+    line-height: 1;
+    color: #373737;
+    background: linear-gradient(45deg,  #49C514, #4C8434 , #60A3DB, #90B9DB);
+}
+
+header:after, .container:after, footer:after, .widget-posts-list li:after, #subscribe:after {
+    content: "";
+    display: table;
+    clear: both;
+    } 
+
+.container {
+    margin: 0 auto;
     text-align: justify;
-    margin: auto;
+    width: 100%;
+    max-width: 960px; 
+    padding: 0 15px;
+} 
+
+
+
+header {
+    width: 100%;
+    background: linear-gradient(45deg,  #49C514, #4C8434 , #60A3DB, #90B9DB);
+    box-shadow: 3px 3px 1px rgba(0,0,0,.05);
+    padding: 15px 0;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.logo{
+    display: block; 
+    text-align: center;
 }
 
 
 
-.menu{
-    /* border: 1px solid;
-    height: 50px; */
+#menu{
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    /* background-color: bisque; */
-    background: linear-gradient(60deg, #185C94, #2B4A63, #042E50, #60A3DB, #90B9DB);
+    background: linear-gradient(60deg,  #49C514, #4C8434 , #60A3DB, #90B9DB);
     border-radius: 10px;
 }
 
 
 
-.menu li{
-    /* display: inline;
-    margin-right: 3%;
-    line-height:50px; */
-    float: left;
-    /* border-right: 1px ridge #bbb; */
-}
 
-.menu .border{
-    padding-top: 17px;
+#menu li {
     float: left;
 }
 
-.box{
-    max-width: 50%;
-    margin: auto;
+#menu li:last-child{
+    float: right;
 }
 
-.articl{
-    max-width: 50%;
-    margin: auto;
-}
-.menu li a{
+#menu li a{
+    
     color: rgb(0, 1, 2);
     display: block;
-    /* color: red; */
+
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -57,18 +93,12 @@ main{
     -webkit-transition: 0.3s;
     transition: 0.3s;
     padding: 10px;
-    
-}
-
-.menu .test{
-    line-height: 28px; 
+    margin-left: 40px;
 }
 
 
-.menu li a:before{
-    /* background-color: brown; */
-    /* padding-top: 20px;
-    text-decoration: underline; */
+
+#menu li a:before{
     content: '';
     border-bottom: 2px solid #000;
     padding: 0 10px;
@@ -76,42 +106,86 @@ main{
     bottom: 0;
     left: 0;
     right: 0;
+    
     margin: 0 auto;
     width: 0;
     -webkit-transition: 0.3s;
     transition: 0.3s;
-
 }
 
-.menu li a:hover::before{
+#menu li a:hover:before{
     width: 100%;
     padding: 0;
 }
 
-.menu li a:active{
-    background: rgb(9, 207, 98);
-    /* color: #fff; */
-    -webkit-transition: none;
-    transition: none;
-}
-a{
-    color: rgb(0, 1, 2);
+.menuBurger {
+    display: none;   /* иконка гамбургер скрыта */
+  }
+
+.photo-image{
+    max-width: 600px;
+    max-height: 400px;
 }
 
-h1{
-    color: rgb(0, 1, 2);
+.albom-page{
+    margin: 0 auto;
 }
 
-h2{
-    color: rgb(0, 1, 2);
-    font-family: Arial, Helvetica, sans-serif;
+.photo-albom{
+    text-align: center;
 }
 
-p{
-    color: rgb(0, 1, 2);
-    font-family: cursive;
+.photo-content{
+    text-align: center;
 }
 
-.rozklad{
-    margin-top: 40px;
+.post-title{
+    text-align: justify;
+}
+
+.post-list{
+    margin-bottom: 30px;
+    width: 100%;
+    
+    float: left;
+}
+
+.post{
+    margin-bottom: 35px;
+}
+
+.post-content p{
+    line-height: 1.5;
+    padding-bottom: 1em;
+}
+
+.post-image{
+    margin-bottom: 30px;
+}
+
+.albom-page{
+   
+    max-width: 600px;
+    max-height: 450px;
+}
+
+.post-title{
+    margin-bottom: 12px;
+    font-size: 26px;
+}
+
+.scrol{
+    background: white;
+}
+
+.teachers{
+    line-height: 1.5;
+    padding-bottom: 1em;
+}
+
+footer {
+    
+    padding: 30px 0;
+    background: #3C3D41;
+    color: white;
 }

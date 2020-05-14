@@ -3,81 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Restailing страница новостей</title>
     <link rel="stylesheet" href="css/node_modules/normalize.css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <link rel="stylesheet" media="print" href="css/print.css">
 </head>
 <body>
-    <div class="box">
-        <header>
-            <h1>Личная страница (блог) Рейда Максим Александрович</h1>
-        </header>
-        <nav>
-            <ul class="menu">
-                <li><a href="index.html"><img src="./images/9.png" alt=" Main page"></a></li><div class="border">|</div>
-                <li class="test"><a href="rozklad.html">Мое расписание</a></li><div class="border">|</div>
-                <li class="test"><a href="photo.html">Фотоальбом</a></li><div class="border">|</div>
-                <li class="test"><a href="news.html">Последние новости</a></li>
-                <li style="float:right"><a href="https://mail.google.com/mail/u/0/#inbox"><img src="./images/at.svg" alt="gmail.com" width="24px" height="24px"> </a></li>
-
-            </ul>    
+    <header>
+        <nav class="container">
+            <h1 class="logo">Личная страница (блог) Рейда Максим Александрович</h1>
+            <div class="menuBurger">
+                <svg width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                     <title>background</title>
+                     <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+                    </g>
+                    <g>
+                     <title>Layer 1</title>
+                     <path fill="#044cf1" id="svg_1" d="m4,10l24,0c1.104,0 2,-0.896 2,-2s-0.896,-2 -2,-2l-24,0c-1.104,0 -2,0.896 -2,2s0.896,2 2,2zm24,4l-24,0c-1.104,0 -2,0.896 -2,2s0.896,2 2,2l24,0c1.104,0 2,-0.896 2,-2s-0.896,-2 -2,-2zm0,8l-24,0c-1.104,0 -2,0.896 -2,2s0.896,2 2,2l24,0c1.104,0 2,-0.896 2,-2s-0.896,-2 -2,-2z"/>
+                    </g>
+                   </svg>
+            </div>
+            <ul id="menu">
+                <li><a href="index.html">Главная страница</a></li>
+                <li><a href="news.html">Новости</a></li>
+                <li><a href="photo.html">Фотоальбом</a></li>
+                <li><a href="rozklad.html">Мое росписание</a></li>
+                <li class="test"><a href="https://mail.google.com/mail/u/0/?tab=rm#inbox">Свяжитесь со мной</a></li>
+            </ul>
         </nav>
+    </header>
+    <div class="container">
+        <h2 class="famous news">Популярные новости</h2>
+        <div class="post-list">
+            <article id="post-1" class="post">
+                <div class="post-image"><img src="images/n1.jpg" alt="news 1"></div>
+                <h3 class="post-discription">Дата публикации: 01.03.2020</h3>
+                <div class="post-content">
+                    <p>
+                        On Saturday, South Carolina became the fourth US state to join the race to find
+                        a Democrat to take on Republican Donald Trump in November's general election. Who were the big winners
+                        and losers?
+                    </p>
+                </div>
+                <div class="post-footer">
+                    <a href="https://www.bbc.com/news/world-us-canada-51678640" class="more-details">Подробнее</a>
+                </div>
+            </article>
+            <article id="post-2" class="post">
+                <div class="post-image"><img src="images/n2.jpg" alt="news 2"></div>
+                <h3 class="post-discription">Дата публикации: 27.02.2020</h3>
+                <div class="post-content">
+                    <p>
+                        Apple's chief executive Tim Cook said the company would open its first physical stores in India
+                        in 2021 and a online outlet later this year.
+                        Apple had to seek special approval from the Indian government to open a store without a local partner.
+                    </p>
+                </div>
+                <div class="post-footer">
+                    <a href="https://www.bbc.com/news/technology-51654274" class="more-details">Подробнее</a>
+                </div>
+            </article>
+            <article id="post-3" class="post">
+                <div class="post-image"><img src="images/n3.jpg" alt="news 3"></div>
+                <h3 class="post-discription">Дата публикации: 28.02.2020</h3>
+                <div class="post-content">
+                    <p>
+                        The 2018 eruption of Anak Krakatau in Indonesia was remarkable in many ways.
+                        It will be remembered, obviously, for the sudden flank collapse that triggered the
+                        tsunami which killed over 400 people on the nearby coastlines of Sumatra and Java.
+                    </p>
+                </div>
+                <div class="post-footer">
+                    <a href=https://www.bbc.com/news/science-environment-51681760"" class="more-details">Подробнее</a>
+                </div>
+            </article>
+            <article id="post-4" class="post">
+                <div class="post-image"><img src="images/n4.jpg" alt="news 4"></div>
+                <h3 class="post-discription">Дата публикации: 28.02.2020</h3>
+                <div class="post-content">
+                    <p>
+                        One show at Paris Fashion Week proved to be unintentionally timely as models
+                        wore a range of outfits complete with matching facemasks.
+                        The outfits were shown earlier this week by French designer Marine Serre.
+                    </p>
+                </div>
+                <div class="post-footer">
+                    <a href="https://www.bbc.com/news/entertainment-arts-51672753" class="more-details">Подробнее</a>
+                </div>
+            </article>
+            <article id="post-5" class="post">
+                <div class="post-image"><img src="images/n5.jpg" alt="news 5"></div>
+                <h3 class="post-discription">Дата публикации: 28.02.2020</h3>
+                <div class="post-content">
+                    <p>
+                        Greta Thunberg has warned "those in power" she will "not be silenced when the world is on fire". 
+                        The teenager was welcomed by chants of "Greta, Greta" as she addressed some
+                        15,000 people at the Bristol Youth Strike 4 Climate (BYS4C) event.
+                    </p>
+                </div>
+                <div class="post-footer">
+                    <a href="https://www.bbc.com/news/uk-england-bristol-51663632" class="more-details">Подробнее</a>
+                </div>
+            </article>
+        </div>
     </div>
-
-    <main>
-        <h2>Популярные новости</h2>
-        <article>
-            <section>
-                <img src="images/n1.jpg" alt="BBC">
-                <p><b>Дата публикации</b>: 01.03.2020</p>
-                On Saturday, South Carolina became the fourth US state to join the race to find <br>
-                a Democrat to take on Republican Donald Trump in November's general election. Who were the big winners <br>
-                and losers?
-                <p><a href="https://www.bbc.com/news/world-us-canada-51678640">Подробнее</a></p>
-            </section>
-    
-            <hr>
-            <section>
-                <img src="images/n2.jpg" alt="BBC">
-                <p><b>Дата публикации</b>: 27.02.2020</p>
-                Apple's chief executive Tim Cook said the company would open its first physical stores in India <br>
-                in 2021 and a online outlet later this year. <br>
-                Apple had to seek special approval from the Indian government to open a store without a local partner.
-                <p><a href="https://www.bbc.com/news/technology-51654274">Подробнее</a></p>
-            </section>
-            <hr>
-            <section>
-                <img src="images/n3.jpg" alt="BBC">
-                <p><b>Дата публикации</b>: 28.02.2020</p>
-                The 2018 eruption of Anak Krakatau in Indonesia was remarkable in many ways. <br>
-                It will be remembered, obviously, for the sudden flank collapse that triggered the <br>
-                tsunami which killed over 400 people on the nearby coastlines of Sumatra and Java.
-                <p><a href="https://www.bbc.com/news/science-environment-51681760">Подробнее</a></p>
-            </section>
-            <hr>
-            <section>
-                <img src="images/n4.jpg" alt="BBC">
-                <p><b>Дата публикации</b>: 28.02.2020</p>
-                One show at Paris Fashion Week proved to be unintentionally timely as models <br>
-                wore a range of outfits complete with matching facemasks. <br>
-                The outfits were shown earlier this week by French designer Marine Serre.
-                <p><a href="https://www.bbc.com/news/entertainment-arts-51672753">Подробнее</a></p>
-            </section>
-            <hr>
-            <section>
-                <img src="images/n5.jpg" alt="BBC">
-                <p><b>Дата публикации</b>: 28.02.2020</p>
-                Greta Thunberg has warned "those in power" she will "not be silenced when the world is on fire". <br>
-                The teenager was welcomed by chants of "Greta, Greta" as she addressed some <br>
-                15,000 people at the Bristol Youth Strike 4 Climate (BYS4C) event.
-                <p><a href="https://www.bbc.com/news/uk-england-bristol-51663632">Подробнее</a></p>
-            </section>
-        </article>
-        <p style="float:right"><a href="javascript:scroll(0,0)">Наверх</a></p>
-    </main>
     <footer>
-        <p>Copyrite 2020. Все права защищены. <a href="https://www.instagram.com/maxik.reyda/">Напишите мне.</a></p>
-        
+        <div class="container">
+            <p>Copyrite 2020. Все права защищены.  <a title="Instagram" href="https://www.instagram.com/maxik.reyda/" target="_blank"><i class="fa fa-instagram"></i></a></p>          
+        </div>
     </footer>
+    <script>
+        $(function(){
+            
+            $('.menuBurger').on('click', function(){
+                
+                $('#menu').slideToggle(300, function(){
+                    
+                    if($(this).css('display') === 'none'){
+                        $(this).removeAttr('style');
+                }
+                
+            });
+            
+         });
+            
+        });
+            </script>
 </body>
 </html>
